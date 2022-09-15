@@ -14,6 +14,8 @@
 
 
 		<script>
+
+
 			document.write("<em><strong> \"If I had nine hours to chop down a tree, I'd spend the first six sharpening my ax.\" </strong><br> -- Abraham Lincoln </em>");
 
 		function	repeatingText(){
@@ -23,7 +25,19 @@
 
 		}
 		repeatingText();
-		document.write(navigator.appName);
+		document.write(navigator.userAgent);
+
+		function getRandomImage() {
+	var randomImage = new Array();
+		randomImage[0] = "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg";
+		randomImage[1] = "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg";
+		randomImage[2] = "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg";
+
+		var number = Math.floor(Math.random()*randomImage.length);
+		document.write('<img src="'+randomImage[number]+'" />');
+	}
+	getRandomImage();
+
 		</script>
 
 
